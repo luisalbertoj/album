@@ -34,7 +34,12 @@ background: linear-gradient(0deg, rgba(42,101,115,1) 0%, rgba(2,0,34,1) 70%);
 .boton-reproducir:hover {
     background-color: rgb(33, 241, 26);
 }
-
+.noVisible {
+    display: none;
+}
+.visible { 
+    display: block;
+}
 .turn {
     background-color: rgb(33, 241, 26);
     -webkit-animation: 3s rotate linear infinite;
