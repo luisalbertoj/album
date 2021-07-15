@@ -7,7 +7,7 @@ let tiempo = document.getElementById("tiempo");
 
 const IngresarDatos = () => {
 
-  let nombreUsuario = prompt("Ingrese su Nombre : ".tol);
+  let nombreUsuario = prompt("Ingrese su Nombre : ");
   if (nombreUsuario == null || nombreUsuario == "") {
     alert("Por favor ingrese su nombre correcto ");
     nombreUsuario = prompt("Ingrese su Nombre : ");
