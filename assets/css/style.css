@@ -32,11 +32,6 @@ background: linear-gradient(90deg, rgba(20,20,20,1) 39%, rgba(11,0,32,1) 100%);
     grid-template-rows: 50px  100px 450px 450px ;
   }
 
-.a {background: blue }
-.b {background: red }
-.c {background: green }
-.d {background: orange }
-
 .titulo {
 
     color: rgb(255, 255, 255);
@@ -75,6 +70,13 @@ background: linear-gradient(90deg, rgba(20,20,20,1) 39%, rgba(11,0,32,1) 100%);
   grid-row-start: 1;
   grid-column: 1/4;
   font-size:28px;
+  color: aliceblue;
+}
+
+.formulario{
+  grid-row-start: 4;
+  grid-column-start: 2;
+  width: 100%;
   color: aliceblue;
 }
 
