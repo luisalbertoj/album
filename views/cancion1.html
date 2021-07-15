@@ -11,7 +11,7 @@
 <body class="bg-dark text-light">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="/">The Mills</a>
+            <a class="navbar-brand" href="../index.html">The Mills</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -19,7 +19,7 @@
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
                     <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
-                    <a class="nav-link" href="/albums">albumes</a>
+                    <a class="nav-link" href="../views/album.html">albumes</a>
                 </div>
             </div>
         </div>
@@ -33,6 +33,16 @@
             
             <div class="col-md-3">
                 <img src="https://images.genius.com/06a53a4420bf72ed170671a69f0aed9e.640x640x1.jpg" class="disc-img" id="disc"/>
+
+                <div class="mt-5">
+                    <h5 id="songName"></h5>
+                    <h5 id="songAlbum"></h5>
+                    <h5 id="songYear"></h5>
+                    <h5 id="songComposer"></h5>
+                    <h5 id="songDuration"></h5>
+                </div>
+
+                
             </div>
           
             <div class="col-md-4">
@@ -71,8 +81,42 @@
                     <p>Miénteme miénteme miénteme miénteme</p>
                 </div>
             </div>
-            
+
             <div class="col-md-5">
+                <form id="formSong" method="POST">
+                    <div class="form-group">
+                        <label for="c2Name">Nombre de la canción</label>
+                        <input type="text" class="form-control" id="c2Name" name="c2Name" autofocus/>
+                    </div>
+
+                    <div class="form-group mt-2">
+                        <label for="c2Album">Album</label>
+                        <input type="text" class="form-control" id="c2Album" name="c2Album" />
+                    </div>
+
+                    <div class="form-group mt-2">
+                        <label for="c2Year">Año de lanzamiento</label>
+                        <input type="number" class="form-control" id="c2Year" name="c2Year" />
+                    </div>
+
+                    <div class="form-group mt-2">
+                        <label for="c2Composer">Compositor</label>
+                        <input type="text" class="form-control" id="c2Composer" name="c2Composer" />
+                    </div>
+
+                    <div class="form-group mt-2">
+                        <label for="c2Duration">Duración</label>
+                        <input type="text" class="form-control" id="c2Duration" name="c2Duration" placeholder="00:00" />
+                    </div>
+
+                    <div class="d-flex flex-row-reverse">
+                        <button type="submit" class="btn btn-primary mt-2 pull-right">Guardar</button>
+                    </div>
+
+                </form>
+            </div>
+            
+            <div class="col-md-12 mt-5">
                 <h3>Sobre la banda</h3>
                 <p>The Mills es una banda colombiana de Rock formada en Bogotá con cinco integrantes en el año 2007, por el vocalista Álvaro Charry (Bako), el guitarrista Jorge Bello (Geogy), el bajista Ramón Gutiérrez, el teclista Diego Cáceres y el baterista Diego Cadavid.1​ La formación de la banda fueron influenciados por bandas de Rock alternativo como U2, Linkin Park y Radiohead 2​ Su primer trabajo discográfico fue Don't Care What They Think, es el primer EP de la banda publicada en el 2007.3​ Luego editan su primer álbum debut titulado Babel, grabado en "Art&co Records Studios" y producido por Jorge Holguin Pyngwi y lanzado el 18 de diciembre de 2009.​</p>
             </div>
