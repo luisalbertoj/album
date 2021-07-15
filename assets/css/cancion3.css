@@ -1,0 +1,54 @@
+.container-general {
+    background: rgb(2,0,34);
+background: linear-gradient(90deg, rgba(2,0,34,1) 0%, rgba(19,19,24,1) 35%, rgba(127,162,170,1) 100%);
+}
+.contenedor-general-2 {
+    background: rgb(42,101,115);
+background: linear-gradient(0deg, rgba(42,101,115,1) 0%, rgba(2,0,34,1) 70%);
+}
+.contenedor-album {
+    padding: 3em 0 3em 3em;
+    text-align: end;
+}
+.cont-text {
+    padding: 3em 5em 3em 1em;
+}
+.artista {
+    width: 30px;
+    height: 30px;
+    border-radius: 150px;
+}
+.txt-img {
+    font-size: 2rem;
+}
+.letra {
+    padding: 3em;
+}
+.boton-reproducir {
+    background-color: palevioletred;
+    color: white;
+    padding: 1em;
+    border-radius: 150px;
+    border: none;
+}
+.boton-reproducir:hover {
+    background-color: rgb(33, 241, 26);
+}
+
+.turn {
+    background-color: rgb(33, 241, 26);
+    -webkit-animation: 3s rotate linear infinite;
+    animation: 3s rotate linear infinite;
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+}
+
+
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to {transform: rotate(360deg);}
+}
+@-webkit-keyframes rotate {
+    from {-webkit-transform: rotate(0deg);}
+    to {-webkit-transform: rotate(360deg);}
+}
